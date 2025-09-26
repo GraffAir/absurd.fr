@@ -1,5 +1,5 @@
 .star {
-    animation: spin 2s linear infinite;
+    position:absolute;
 }
 
 @keyframes spin {
