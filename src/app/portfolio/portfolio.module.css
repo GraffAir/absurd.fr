@@ -1,0 +1,18 @@
+.container {
+    background:linear-gradient(
+            #262A6C,
+            #5622AF
+    );
+    height:300vh;
+}
+
+.parallaxBackground {
+    position:absolute;
+    top:0;
+    height:100%;
+}
+
+.titre {
+    padding-top:40vh;
+    color:white;
+}
