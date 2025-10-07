@@ -1,13 +1,9 @@
-html {
-    height: 300%;
-}
-
-body {
-    height:100%;
+.container {
     background:linear-gradient(
             #262A6C,
             #5622AF
     );
+    height:300vh;
 }
 
 .parallaxBackground {

@@ -23,12 +23,12 @@ export default function Page() {
     }
 
     return (
-        <>
+        <div className={styles.container}>
             <h1 className={styles.titre} style={{position:'absolute', top:10}}>Portfolio</h1>
             <ParallaxBanner className={styles.parallaxBackground}>
                 {starList}
             </ParallaxBanner>
 
-        </>
+        </div>
     )
 }
