@@ -11,6 +11,7 @@ RUN npm install
 COPY . .
 
 # 3. Build
+RUN next build
 RUN npm run build
 
 # 4. Expose du port 3000
