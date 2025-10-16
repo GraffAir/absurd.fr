@@ -1,32 +1,20 @@
-# Base image
-FROM node:22-alpine AS base
+# Image de base
+FROM node:18-alpine
 
 WORKDIR /app
 
-# Stage 1: Install dependencies
-FROM base AS deps
-RUN apk add --no-cache libc6-compat
-COPY package.json package-lock.json* ./
-RUN npm ci
+# 1. Configuration & dépendances
+COPY package*.json ./
+RUN npm install
 
-# Stage 2: Build the app
-FROM base AS builder
-COPY --from=deps /app/node_modules ./node_modules
+# 2. Copie
 COPY . .
+
+# 3. Build
 RUN npm run build
 
-# Stage 3: Production image
-FROM base AS runner
-WORKDIR /app
-
-ENV NODE_ENV=production
-# disable telemetry during runtime.
-ENV NEXT_TELEMETRY_DISABLED=1
-
-COPY --from=builder /app ./
-
+# 4. Expose du port 3000
 EXPOSE 3000
 
-# Next.js port. Default is 3000
-ENV PORT=3000
+# 5. Run
 CMD ["npm", "start"]
