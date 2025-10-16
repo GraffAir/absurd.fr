@@ -14,4 +14,4 @@ COPY . .
 EXPOSE 3000
 
 # 4. Run
-CMD ["npm", "start", "-H", "0.0.0.0"]
+CMD ["npm", "start"]
