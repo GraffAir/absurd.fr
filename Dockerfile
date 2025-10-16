@@ -5,17 +5,13 @@ WORKDIR /app
 
 # 1. Configuration & dépendances
 COPY package*.json ./
-RUN npm install
+RUN npm install --production
 
 # 2. Copie
 COPY . .
 
-# 3. Build
-RUN next build
-RUN npm run build
-
-# 4. Expose du port 3000
+# 3. Expose du port 3000
 EXPOSE 3000
 
-# 5. Run
-CMD ["npm", "start"]
+# 4. Run
+CMD ["npm", "start", "-H", "0.0.0.0"]
