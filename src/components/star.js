@@ -12,8 +12,8 @@ export default function Star({ big, posX, posY, parallax, size = 20, className =
                 <Image
                     src={big ? "/BigStar.svg" : "/SmallStar.svg"}
                     alt=""
-                    width={size}
-                    height={size}
+                    width={big ? size : size/2}
+                    height={big ? size : size/2}
                     className={`${styles.star} ${className}`}
                     style={{left:`${posX}`, top:`${posY}`}}
                 />
