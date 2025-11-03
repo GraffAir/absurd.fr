@@ -9,6 +9,10 @@ body {
     height:100%;
 }
 
+main {
+    z-index:-1;
+}
+
 h1 {
     font-size:52pt;
 }

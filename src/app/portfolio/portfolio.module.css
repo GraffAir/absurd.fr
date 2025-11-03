@@ -5,21 +5,13 @@
             #440071 200vh
     );
     height:300vh;
+    position:relative;
 }
 
-.parallaxBackground {
-    position:absolute;
-    top:0;
-    height:100%;
-}
 
 .titre {
     padding-top:40vh;
     color:white;
+    z-index:2;
 }
 
-.mainFrame {
-    position:absolute;
-    height:100%;
-    background:linear-gradient(rgba(0,0,0,1), rgba(255, 255, 255, 0) 50%);
-}
