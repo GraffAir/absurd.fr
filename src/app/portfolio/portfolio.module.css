@@ -15,3 +15,8 @@
     z-index:2;
 }
 
+.planet {
+    position:absolute;
+    top:60vh;
+    right:10vh;
+}
