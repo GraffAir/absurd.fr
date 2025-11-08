@@ -23,7 +23,7 @@ export function Star({ big, posX, posY, parallax, size = 20, className = '' }) {
 export default function StarCanvas(){
     let starList =  [];
     const sizeMultiplier = 7;
-    for (let i = 0; i < 500; i++){
+    for (let i = 0; i < 100; i++){
         let size = Math.random()*sizeMultiplier;
         let max_size = sizeMultiplier*0.5;
         starList.push(
