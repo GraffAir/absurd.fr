@@ -9,7 +9,7 @@ export function Star({ big, posX, posY, parallax, size = 20, className = '' }) {
     return (
             <ParallaxBannerLayer speed={parallax}>
                 <Image
-                    src={"/SmallStar.svg"}
+                    src={"/Star.svg"}
                     alt=""
                     width={big ? size : size/2}
                     height={big ? size : size/2}
@@ -40,6 +40,8 @@ export default function StarCanvas(){
 
     return <ParallaxProvider>
         <ParallaxBanner className={styles.parallaxBackground} style={{position:'absolute'}}>
+            <ParallaxBannerLayer image={"/SmallStars.svg"} speed={2} style={{backgroundSize:'auto'}} />
+            <ParallaxBannerLayer image={"/BigStars.svg"} speed={20} style={{backgroundSize:'auto'}} />
             {starList}
         </ParallaxBanner>
     </ParallaxProvider>
