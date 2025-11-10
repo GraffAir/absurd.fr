@@ -1,9 +1,9 @@
 .container {
     background:linear-gradient(
-            #000000,
-            #000000 70vh,
-            #010059 120vh,
-            #440071 200vh
+            #0C0537,
+            #0C0537 70vh,
+            #0C0537 120vh,
+            #0C0537 200vh
     );
     height:300vh;
     position:relative;
@@ -14,6 +14,11 @@
     padding-top:40vh;
     color:white;
     z-index:2;
+}
+
+.nebuleuse {
+    position:absolute;
+    z-index:-1;
 }
 
 .planet {
