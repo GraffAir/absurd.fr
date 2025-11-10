@@ -1,7 +1,14 @@
 @import 'tailwindcss';
 
+a {
+    color:blue;
+    text-decoration: underline;
+}
+
 body {
     height:100%;
+    background:#262A6C;
+    color:white;
 }
 
 main {

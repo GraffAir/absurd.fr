@@ -1,3 +1,6 @@
 export default function Page() {
-  return <h1>Site personnel !</h1>
+  return <p>
+      Vous allez être redirigés vers la page voulue automatiquement... <br />
+      <a href={'/portfolio'}>Cliquez ici</a> sinon.
+  </p>
 }
