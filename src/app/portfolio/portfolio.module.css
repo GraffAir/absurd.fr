@@ -1,7 +1,8 @@
 .container {
     background:linear-gradient(
             #000000,
-            #010059 100vh,
+            #000000 70vh,
+            #010059 120vh,
             #440071 200vh
     );
     height:300vh;
