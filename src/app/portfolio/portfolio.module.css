@@ -1,18 +1,42 @@
 .container {
     background:linear-gradient(
-            #000000,
-            #010059 100vh,
-            #440071 200vh
+            #0C0537,
+            #0C0537 70vh,
+            #0C0537 120vh,
+            #0C0537 200vh
     );
+    position:absolute;
     height:300vh;
-    position:relative;
+    width:100%;
+
+    z-index:-2;
 }
 
 
 .titre {
     padding-top:40vh;
+    padding-left:10vh;
     color:white;
     z-index:2;
+}
+
+
+.fullSection {
+    height:100vh;
+    width:100vh;
+    z-index:2;
+}
+
+.startButton {
+    position: absolute;
+    bottom:0;
+    right:50%;
+    color:white;
+}
+
+.nebuleuse {
+    position:absolute;
+    z-index:-1;
 }
 
 .planet {

@@ -1,5 +1,22 @@
 .star {
+    --rand: 0.5;
     position:absolute;
+    animation: 10s infinite linear twinkle;
+    box-shadow: white 0 0 10px;
+
+}
+
+.starVariation1 {
+    --star-variation-1: red;
+    fill:red;
+    filter: brightness(0) saturate(100%) invert(80%) sepia(15%) saturate(4064%) hue-rotate(290deg) brightness(104%) contrast(103%);
+}
+
+.starVariation2 {
+    --star-variation-2: purple;
+    color:var(--star-variation-2);
+    box-shadow: var(--star-variation-2) 0 0 10px;
+    filter: brightness(0) saturate(100%) invert(62%) sepia(14%) saturate(1441%) hue-rotate(195deg) brightness(102%) contrast(96%);
 }
 
 .parallaxBackground {
@@ -8,7 +25,7 @@
     height:100%;
 }
 
-@keyframes star {
-    0% { transform: rotate(0deg);}
-    100% { transform: rotate(360deg);}
+@keyframes twinkle {
+    0% { box-shadow: white 0 0 10px;}
+    100% { box-shadow: white 0 0 5px;}
 }
