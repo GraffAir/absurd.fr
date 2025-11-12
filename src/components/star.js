@@ -13,7 +13,7 @@ export function Star({ big, posX, posY, parallax, size = 20, className = '' }) {
                     alt=""
                     width={big ? size : size/2}
                     height={big ? size : size/2}
-                    className={`${styles.star} ${className} ${Math.random() < 0.5 ? styles.starVariation1 : styles.starVariation2}`}
+                    className={`${styles.star} ${className}`} /*  ${Math.random() < 0.5 ? styles.starVariation1 : styles.starVariation2} */
                     style={{left:`${posX}`, top:`${posY}`}}
                 />
             </ParallaxBannerLayer>
@@ -23,7 +23,7 @@ export function Star({ big, posX, posY, parallax, size = 20, className = '' }) {
 export default function StarCanvas(){
     let starList =  [];
     const sizeMultiplier = 3;
-    for (let i = 0; i < 150; i++){
+    for (let i = 0; i < 100; i++){
         let size = Math.random()*sizeMultiplier;
         let max_size = sizeMultiplier*0.5;
         starList.push(

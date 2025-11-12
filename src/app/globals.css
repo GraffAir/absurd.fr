@@ -11,10 +11,6 @@ body {
     color:white;
 }
 
-main {
-    z-index:-1;
-}
-
 h1 {
     font-size:52pt;
 }

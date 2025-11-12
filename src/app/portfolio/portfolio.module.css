@@ -5,14 +5,25 @@
             #0C0537 120vh,
             #0C0537 200vh
     );
+    position:absolute;
     height:300vh;
-    position:relative;
+    width:100%;
+
+    z-index:-2;
 }
 
 
 .titre {
     padding-top:40vh;
+    padding-left:10vh;
     color:white;
+    z-index:2;
+}
+
+
+.fullSection {
+    height:100vh;
+    width:100vh;
     z-index:2;
 }
 
