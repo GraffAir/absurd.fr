@@ -20,7 +20,7 @@ export default function Page() {
             <section className={styles.fullSection}>
                 <div className={styles.titre}>
                     <p>Rafaël Graff</p>
-                    <h1>Créer du sens<br/> dans l&apos;absurde</h1>
+                    <h1>Créer du sens<br/> dans l&apos;<span className={styles.titreAbsurde}>absurde</span></h1>
                 </div>
 
                 <Link href="#description" className={styles.startButton}>Découvrir mon univers</Link>
