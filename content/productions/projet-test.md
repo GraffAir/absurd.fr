@@ -19,11 +19,14 @@ collaborators:
   - name: "+ 70 autres bénévoles"
 ---
 
-Projet test est un projet fait pour tester dans le cadre des tests qui permettent un développement 
+Projet test est un projet fait pour tester dans le cadre des tests qui permettent un développement
 test driven comment disent les djeuns..
 
 ## Création du projet
 
-Une description longue et intéressante qui explique pourquoi ce projet est venu au goût du jour.
+Une **description longue** et intéressante qui explique *pourquoi* ce projet est venu au goût du jour.
+| Une | tentative |
+| ---- | ---- |
+| de | liste |
 
 ![Capture d'écran du projet](/public/Placeholder.png)
