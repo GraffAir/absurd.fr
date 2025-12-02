@@ -20,16 +20,20 @@ export default function Page() {
             <section className={styles.fullSection}>
                 <div className={styles.titre}>
                     <p>Rafaël Graff</p>
-                    <h1>Créer du sens<br/> dans l&apos;absurde</h1>
+                    <h1>Créer du sens<br/> dans l&apos;<span className={styles.titreAbsurde}>absurde</span></h1>
                 </div>
 
                 <Link href="#description" className={styles.startButton}>Découvrir mon univers</Link>
             </section>
             <section id="description">
-                <h2>Description</h2>
-                <p>Bla bla du texte</p>
+                <div style={{marginTop:"200px"}}></div>
+                <p className={styles.description}>
+                    La liberté offerte par l’informatique m’a toujours passionné – des premiers jeux que j’ai développé sur Scratch jusqu’aux applications web avancées.
+                    C’est l’art qui est arrivé ensuite; réussir à transmettre une émotion, comprendre l’expérience de l’utilisateur.
+                    J’essaie de partager cette passion dans toutes mes créations. Alors, mettez votre ceinture, et bon voyage!</p>
             </section>
             <section id= "productions">
+                <div style={{marginTop:"200px"}}></div>
                 <h2>Productions</h2>
                 <ProjectCanvas/>
             </section>
