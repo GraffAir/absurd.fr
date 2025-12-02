@@ -1,5 +1,7 @@
 ---
 titre: "Projet test"
+description: "Projet test est un projet fait pour tester dans le cadre des tests qui permettent un développement
+test driven comment disent les djeuns"
 type: "Projet académique"
 etat: "En cours"
 cover: "/public/Placeholder.png"
