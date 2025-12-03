@@ -1,8 +1,6 @@
-'use client'
-
 import styles from './portfolio.module.css';
 import StarCanvas from "../../components/star.js";
-import ProjectCanvas from "@/components/portfolio/projectCanvas";
+import ProductionsList from "@/components/production/productionsList";
 import Planet1 from '@/components/background/Planet1.svg';
 import Nebulae2 from '@/components/background/Nebulae2.svg'
 import Link from "next/link";
@@ -19,7 +17,7 @@ export default function Page() {
 
             <section className={styles.fullSection}>
                 <div className={styles.titre}>
-                    <p>Rafaël Graff</p>
+                    <p className={styles.titreNom}>Rafaël Graff</p>
                     <h1>Créer du sens<br/> dans l&apos;<span className={styles.titreAbsurde}>absurde</span></h1>
                 </div>
 
@@ -35,7 +33,7 @@ export default function Page() {
             <section id= "productions">
                 <div style={{marginTop:"200px"}}></div>
                 <h2>Productions</h2>
-                <ProjectCanvas/>
+                <ProductionsList/>
             </section>
             <Link href="https://absurd.fr">Découvrir mon univers</Link>
 

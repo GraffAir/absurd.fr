@@ -1,7 +1,7 @@
-import Production from "@/components/production/production";
+import Details from "@/components/production/productionPage";
 
 export default function Page(){
     return (
-        <Production titre={"Projet test"}></Production>
+        <Details titre={"Projet test"}></Details>
     )
 }
