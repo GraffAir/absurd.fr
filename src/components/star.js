@@ -7,7 +7,6 @@ import {Parallax, ParallaxBanner, ParallaxBannerLayer, ParallaxProvider, usePara
 export function Star({ big, posX, posY, parallax, size = 20, className = '' }) {
     console.log(posX, posY);
     return (
-            <ParallaxBannerLayer speed={parallax}>
                 <Image
                     src={"/Star.svg"}
                     alt=""
@@ -16,7 +15,6 @@ export function Star({ big, posX, posY, parallax, size = 20, className = '' }) {
                     className={`${styles.star} ${className}`} /*  ${Math.random() < 0.5 ? styles.starVariation1 : styles.starVariation2} */
                     style={{left:`${posX}`, top:`${posY}`}}
                 />
-            </ParallaxBannerLayer>
     );
 }
 
@@ -38,11 +36,9 @@ export default function StarCanvas(){
         );
     }
 
-    return <ParallaxProvider>
-        <ParallaxBanner className={styles.parallaxBackground} style={{position:'absolute'}}>
-            <ParallaxBannerLayer image={"/SmallStars.svg"} speed={2} style={{backgroundSize:'auto'}} />
-            <ParallaxBannerLayer image={"/BigStars.svg"} speed={20} style={{backgroundSize:'auto'}} />
+    return <div className={styles.parallaxBackground}>
+            <Image alt="" width="200" height="200" src={"/SmallStars.svg"} style={{backgroundSize:'auto'}} />
+            <Image alt="" width="200" height="200" src={"/BigStars.svg"} speed={20} style={{backgroundSize:'auto'}} />
             {starList}
-        </ParallaxBanner>
-    </ParallaxProvider>
+    </div>
 }
