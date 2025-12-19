@@ -1,8 +1,5 @@
-'use client'
-
 import styles from './star.module.css';
 import Image from 'next/image';
-import {Parallax, ParallaxBanner, ParallaxBannerLayer, ParallaxProvider, useParallax} from "react-scroll-parallax";
 
 export function Star({ big, posX, posY, parallax, size = 20, className = '' }) {
     console.log(posX, posY);
@@ -24,7 +21,7 @@ export default function StarCanvas(){
     for (let i = 0; i < 100; i++){
         let size = Math.random()*sizeMultiplier;
         let max_size = sizeMultiplier*0.5;
-        starList.push(
+        /*starList.push(
             <Star
                 big={size > max_size}
                 size={size > sizeMultiplier*0.9 ? size*2 : size}
@@ -33,12 +30,12 @@ export default function StarCanvas(){
                 parallax={Math.random()*size*20}
                 key={i}
             />
-        );
+        );*/
     }
 
     return <div className={styles.parallaxBackground}>
-            <Image alt="" width="200" height="200" src={"/SmallStars.svg"} style={{backgroundSize:'auto'}} />
-            <Image alt="" width="200" height="200" src={"/BigStars.svg"} speed={20} style={{backgroundSize:'auto'}} />
-            {starList}
+        <div style={{backgroundImage: "url('/SmallStars.svg')"}} className={styles.starImage} />
+        <div style={{backgroundImage: "url('/BigStars.svg')"}} className={styles.starImage} />
+        {starList}
     </div>
 }

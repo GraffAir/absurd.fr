@@ -6,23 +6,18 @@
 
 }
 
-.starVariation1 {
-    --star-variation-1: red;
-    fill:red;
-    filter: brightness(0) saturate(100%) invert(80%) sepia(15%) saturate(4064%) hue-rotate(290deg) brightness(104%) contrast(103%);
-}
-
-.starVariation2 {
-    --star-variation-2: purple;
-    color:var(--star-variation-2);
-    box-shadow: var(--star-variation-2) 0 0 10px;
-    filter: brightness(0) saturate(100%) invert(62%) sepia(14%) saturate(1441%) hue-rotate(195deg) brightness(102%) contrast(96%);
+.starImage {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background:repeat;
 }
 
 .parallaxBackground {
     position:absolute;
     top:0;
     height:100%;
+    width:100%;
 }
 
 @keyframes twinkle {
