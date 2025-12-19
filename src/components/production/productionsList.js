@@ -1,6 +1,6 @@
 import Image from "next/image";
 import {getAllProductions} from "@/utils/productions";
-
+import styles from "./productionsList.module.css";
 export default function ProductionsList(){
     let prodList = [];
     getAllProductions().forEach((p) => prodList.push(
@@ -15,9 +15,14 @@ export default function ProductionsList(){
 }
 
 function ProductionCard({prod}){
-    return <div className={"flex-1/3 bg-amber-200 max-w-1/3"}>
-        <Image src="/Placeholder.png" alt="Illustration du projet (placeholder)" width={300} height={300}/>
-        <h3>{prod.titre}</h3>
-        <p>{prod.description}</p>
+    return <div className="flex flex-wrap gap-2 text-black h-[40vh] w-[500px]">
+        <div className={styles.cardImage}>
+            <div className={styles.cardTitle}>
+                {prod.titre}
+            </div>
+        </div>
+        <div className="bg-(--primary-color) h-1/2">
+
+        </div>
     </div>
 }
