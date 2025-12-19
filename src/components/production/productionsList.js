@@ -9,20 +9,29 @@ export default function ProductionsList(){
             prod={p}
         />
     ));
-    return <div className="flex">
+    return <div className="flex gap-5">
             {prodList}
     </div>
 }
 
 function ProductionCard({prod}){
-    return <div className="flex flex-wrap gap-2 text-black h-[40vh] w-[500px]">
-        <div className={styles.cardImage}>
+    let savoirsListe = [];
+    prod.savoirs.forEach((s) => savoirsListe.push(
+        <p className={styles.savoir}>{s}</p>
+    ));
+    return <div className={styles.outerContainer} style={{backgroundImage: 'url('+prod.cover+')'}}>
+        <div className={styles.innerContainer}>
+            <div className={styles.space} />
             <div className={styles.cardTitle}>
-                {prod.titre}
+                <h3>{prod.titre}</h3>
             </div>
-        </div>
-        <div className="bg-(--primary-color) h-1/2">
-
+            <div className={styles.cardBody}>
+                <p className="w-2/3">{prod.description}</p>
+                <div className="flex gap-1">
+                    {savoirsListe}
+                </div>
+                <a href={'/productions/'+prod.id+'.md'} className="button">En savoir plus</a>
+            </div>
         </div>
     </div>
 }

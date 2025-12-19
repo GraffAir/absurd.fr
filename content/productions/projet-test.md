@@ -1,34 +1,33 @@
 ---
 titre: "Projet test"
-description: "Projet test est un projet fait pour tester dans le cadre des tests qui permettent un développement
-test driven comment disent les djeuns"
-type: "Projet académique"
-etat: "En cours"
-cover: "/public/Placeholder.png"
+description: "Un projet de test qui permet de tester"
+cover: "/Placeholder.png"
 
-links:
-  - source: "linkedin"
-    url: "https://linkedin.com"
-    label: "Projet LinkedIn"
-  - url: "https://studiobaguette.fr"
-    label: "Lien du projet"
-collaborators:
-  - name: "Mathieu Tradnaki"
-    url: "https://linkedin.com"
-  - name: "Anne Rivière"
-    url: "https://linkedin.com"
-  - name: "Maki Torpeados"
-  - name: "+ 70 autres bénévoles"
+type: "Projet personnel"
+statut: "Achevé"
+
+
+savoirs: 
+  - "Gestion de projet"
+  - "Gestion de projet agile"
+  - "PHP"
 ---
 
-Projet test est un projet fait pour tester dans le cadre des tests qui permettent un développement
-test driven comment disent les djeuns..
+**Opération: Snow Bear** est un projet de conception et développement d'un événement lié à la cybersécurité.
+Au sein d'une équipe de 4 étudiants, j'ai pu mettre en oeuvre mes connaissances en gestion de projet,
+analyser le besoin de l'utilisateur, ainsi que développer et intégrer des applications diverses
+dans un environnement conteneurisé.
 
-## Création du projet
 
-Une **description longue** et intéressante qui explique *pourquoi* ce projet est venu au goût du jour.
-| Une | tentative |
-| ---- | ---- |
-| de | liste |
+Cette production m'a permi de mettre en oeuvre de nombreuses connaissances :
+- en gestion de projet, notamment au travers des méthodes Agiles;
+- en analyse du besoin d'un client en communiquant avec lui,
 
-![Capture d'écran du projet](/public/Placeholder.png)
+
+> Un Capture The Flag (CTF) est une compétition de cybersécurité dont l'objectif est de pirater des applications conçues pour l'occasion
+afin d'obtenir des points. C'est un type de compétition très intéressante, surtout en tant que développeur, car elle permet de sensibiliser
+aux failles de sécurités courantes et améliorer ses pratiques.
+
+En équipe de 4 personnes, notre objectif était de réaliser un CTF pour un client 
+
+

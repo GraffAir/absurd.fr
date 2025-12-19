@@ -20,7 +20,7 @@ export function getAllProductions(){
         const fileContents = fs.readFileSync(fullPath, 'utf8');
 
         const matterResult = matter(fileContents);
-        console.log(matterResult);
+        //console.log(matterResult);
         return {
             id,
             ...matterResult.data,
