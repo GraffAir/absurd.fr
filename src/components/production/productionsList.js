@@ -17,7 +17,7 @@ export default function ProductionsList(){
 function ProductionCard({prod}){
     let savoirsListe = [];
     prod.savoirs.forEach((s) => savoirsListe.push(
-        <p className={styles.savoir}>{s}</p>
+        <div className={styles.savoir}>{s}</div>
     ));
     return <div className={styles.outerContainer} style={{backgroundImage: 'url('+prod.cover+')'}}>
         <div className={styles.innerContainer}>
