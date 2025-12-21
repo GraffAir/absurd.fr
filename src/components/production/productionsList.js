@@ -27,7 +27,7 @@ function ProductionCard({prod}){
             </div>
             <div className={styles.cardBody}>
                 <p className="w-2/3">{prod.description}</p>
-                <div className="flex gap-1">
+                <div className="flex gap-1 flex-wrap">
                     {savoirsListe}
                 </div>
                 <a href={'/productions/'+prod.id} className="button">En savoir plus</a>

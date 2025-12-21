@@ -25,6 +25,10 @@ h1 {
     font-family: 'Boldonse', cursive;
 }
 
+h2 {
+    font-size: 40pt;
+}
+
 .button {
     padding: 10px;
     width:100%;
