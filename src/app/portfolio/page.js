@@ -14,6 +14,7 @@ export default function Page() {
                 <StarCanvas/>
 
                 <Nebulae2 className={styles.nebuleuse}/>
+                <p className={styles.endQuote}> « Whatever comes next, I do not think it is to be feared. »</p>
             </div>
 
                 <section className={styles.fullSection}>
@@ -40,7 +41,6 @@ export default function Page() {
                     <h2>Productions</h2>
                     <ProductionsList/>
                 </section>
-                <Link href="https://absurd.fr">Découvrir mon univers</Link>
 
         </main>
     );

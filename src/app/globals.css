@@ -24,3 +24,19 @@ h1 {
     font-size:52pt;
     font-family: 'Boldonse', cursive;
 }
+
+h2 {
+    font-size: 40pt;
+}
+
+.button {
+    padding: 10px;
+    width:100%;
+    text-align: center;
+    border:solid 1px #41468a;
+    border-radius: 8px;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    background:radial-gradient(#24275e, #262A6C);
+}

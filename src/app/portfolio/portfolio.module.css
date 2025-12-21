@@ -81,7 +81,7 @@
 }
 
 .nebuleuse {
-    position:absolute;
+    position:fixed;
     z-index:-1;
 }
 
@@ -89,4 +89,15 @@
     position:absolute;
     top:60vh;
     right:10vh;
+}
+
+.endQuote {
+    position: absolute;
+    bottom: 10px;
+    width:100%;
+
+    text-align: center;
+    color: #786d9f;
+    font-style: italic;
+    font-family: arial serif;
 }

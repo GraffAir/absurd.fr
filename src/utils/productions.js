@@ -1,11 +1,29 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
 
 const productionsDirectory = path.join(process.cwd(), 'content/productions');
 
-export function getProductionFromId(id){
+export function getContentFromFile(fileName){
+    const fullPath = path.join(productionsDirectory, fileName);
+    return fs.readFileSync(fullPath, 'utf8');
+}
 
+export async function getProductionFromId(id) {
+    const fileContents = getContentFromFile(id + '.md');
+    const matterResult = matter(fileContents);
+
+    const processedContent = await remark()
+        .use(html)
+        .process(matterResult.content);
+    const contentHtml = processedContent.toString();
+    return {
+        id,
+        contentHtml,
+        ...matterResult.data,
+    };
 }
 
 /**
@@ -16,11 +34,8 @@ export function getAllProductions(){
     return fileNames.map((fileName) => {
         const id = fileName.replace(/\.md$/, '');
 
-        const fullPath = path.join(productionsDirectory, fileName);
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
-
+        const fileContents = getContentFromFile(fileName);
         const matterResult = matter(fileContents);
-        console.log(matterResult);
         return {
             id,
             ...matterResult.data,
