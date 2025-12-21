@@ -30,7 +30,7 @@ function ProductionCard({prod}){
                 <div className="flex gap-1">
                     {savoirsListe}
                 </div>
-                <a href={'/productions/'+prod.id+'.md'} className="button">En savoir plus</a>
+                <a href={'/productions/'+prod.id} className="button">En savoir plus</a>
             </div>
         </div>
     </div>

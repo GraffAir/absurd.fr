@@ -6,7 +6,7 @@ export default async function Page({params}){
     const prod = await getProductionFromId(id);
     return (<>
         <header className={styles.header}>
-
+            <a href={'/portfolio#productions'} className="button relative top-5 left-5">Retour aux productions</a>
         </header>
         <main>
             <div className={styles.titleContainer}>
