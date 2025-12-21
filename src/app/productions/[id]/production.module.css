@@ -1,0 +1,24 @@
+.header {
+    background: #1b1d4b;
+    height: 20vh;
+}
+
+.titleContainer {
+    position: relative;
+    left:10vw;
+    top: -7vh;
+
+    display: table;
+}
+
+.titleContainer h1 {
+    font-size:40pt;
+}
+
+.desc {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: table-caption;
+    caption-side: bottom;
+}
+
