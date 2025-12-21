@@ -4,6 +4,11 @@ import matter from 'gray-matter';
 
 const productionsDirectory = path.join(process.cwd(), 'content/productions');
 
+export function getContentFromFile(fileName){
+    const fullPath = path.join(productionsDirectory, fileName);
+    return fs.readFileSync(fullPath, 'utf8');
+}
+
 export function getProductionFromId(id){
 
 }
